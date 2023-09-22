@@ -7,7 +7,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 export default function SectionOne() {
   return (
     <>
-      <div className="flex flex-col md:flex-row mt-10">
+      <div className="flex flex-col md:flex-row mt-32">
         {/* Sidebar (visible on large screens) */}
         <div className="w-full md:w-1/4 border">
           <ul className="space-y-10">
