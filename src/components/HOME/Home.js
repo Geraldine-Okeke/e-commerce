@@ -5,6 +5,12 @@ import SecThree from "./SecThree"
 import sec2 from './SecTwoItems'
 import SecFour from './SecTwo'
 import sec4 from './SecFourItems'
+import SecFive from "./SecFive"
+import SecSix from './SecTwo'
+import sec6 from './SecSixItems'
+import SecSeven from "./SecSeven"
+import SecEight from "./SecEight"
+import Footer from "./Footer"
 export default function Home(){
   return(
     <>
@@ -23,6 +29,17 @@ export default function Home(){
       title= "Best Selling Products"
       showDiv ={false}
     />
+    <SecFive/>
+    <SecSix
+      sec2items={sec6}
+      heading='Our Products'
+      title='Explore Our Products'
+    />
+    
+    <SecSeven/>
+    <SecEight/>
+    <Footer/>
+   
     </>
   )
 }

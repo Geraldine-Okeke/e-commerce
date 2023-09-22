@@ -8,13 +8,13 @@ export default function Header(){
   );
   return(
     <>
-      <header className="flex flex-row p-4 fixed top-0 left-0 right-0 pb-10 mb-32 bg-red-500 z-50">
+      <header className="flex flex-row p-4 fixed top-0 items-center left-0 right-0 pb-15 mb-32 bg-red-500 z-50">
         <div>
           <h1 className="font-bold text-2xl text-black ">EXCLUSIVE</h1>
         </div>
         <OffcanvasNav />
-        <nav className=" justify-between  flex flex-row w-full">
-          <div className="w-full  flex flex-row justify-between">
+        <nav className=" justify-between  items-center flex flex-row w-full">
+          <div className="w-full  flex flex-row justify-between items-center">
           <div className="pl-20">
             <ul className="hidden md:flex flex-row space-x-20 ">
             <li>

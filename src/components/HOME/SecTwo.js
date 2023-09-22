@@ -70,7 +70,7 @@ export default function SecTwo({sec2items, heading, title, showDiv}) {
         
       </div>
 
-      <div className="grid grid-cols-1 gap-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4">
+      <div className="grid grid-cols-1  gap-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4">
         {sec2items.map((item, index) => (
           <div key={index} className="m-4 border flex flex-col pl-4 relative">
             {showDiv && <span className="bg-red-500 text-white absolute p-2 top-0 left-0">-{item.minus}$</span>}
