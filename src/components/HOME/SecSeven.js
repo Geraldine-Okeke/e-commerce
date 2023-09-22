@@ -20,7 +20,7 @@ export default function SecSeven() {
           <div className='flex flex-col pl-4 space-y-4 w-1/2 my-auto pb-2' >
             <span className='text-3xl font-bold'>Play Station 5</span>
             <span className=''>Black and White version of PS5 coming out for sale</span>
-            <button className='border w-full md:w-1/3 '>Shop Now</button>
+            <button className='border w-full md:w-1/3 rounded-full'>Shop Now</button>
           </div>
           <div className='float-right  w-1/2'>
             <img className='w-full h-full' src={ps5} alt='ps5'/>
@@ -32,7 +32,7 @@ export default function SecSeven() {
             <div className='flex flex-col my-auto px-4'>
               <span className='text-3xl font-bold'>Women's Collection</span>
               <span className=''>Featured woman collections that give you another vibe.</span>
-              <button className='w-full md:w-1/4 border'>Shop Now</button>
+              <button className='w-full md:w-1/4 border rounded-full'>Shop Now</button>
             </div>
             <img src={lady} alt='lady' className='h-full '/> 
           </div>
@@ -42,7 +42,7 @@ export default function SecSeven() {
               <div className='absolute flex flex-col bottom-10  px-4 space-y-2'>
                 <span className='text-3xl font-bold'>Speakers</span>
                 <span>Amazon wireless speakers</span>
-                <button className='w-1/2 border'>Shop Now</button>
+                <button className='w-1/2 border rounded-full'>Shop Now</button>
               </div>
             </div>
             <div className='w-full md:w-1/2 relative bg-black'>
@@ -50,7 +50,7 @@ export default function SecSeven() {
               <div className='absolute flex flex-col bottom-10 px-4 space-y-2'>
                 <span className='text-3xl font-bold'>Perfumes</span>
                 <span>GUCCI INTENSE OUD EDP</span>
-                <button className='w-1/2 border'>Shop Now</button>
+                <button className='w-1/2 border rounded-full'>Shop Now</button>
               </div>
             </div>
           </div>

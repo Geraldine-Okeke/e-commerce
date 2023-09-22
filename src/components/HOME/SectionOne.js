@@ -33,8 +33,8 @@ export default function SectionOne() {
                 {/* Item Content */}
                 <div className="w-full md:w-1/2 flex flex-col space-y-4 md:space-y-20">
                   <div className="flex flex-row items-center">
-                    <img className="h-24 w-12" src={item.icon} alt={`Icon ${index + 1}`} />
-                    <span className="ml-3 pt-2 text-xl">{item.name}</span>
+                    <img className="w-4 h-12" src={item.icon} alt={`Icon ${index + 1}`} />
+                    <span className="ml-3 pt-2 text-xl w-4/5">{item.name}</span>
                   </div>
                   <h2 className="text-2xl md:text-4xl pt-4 font-bold">Up to {item.voucher}% voucher</h2>
                   <Link className="text-blue-400 hover:text-blue-200">Shop Now</Link>
