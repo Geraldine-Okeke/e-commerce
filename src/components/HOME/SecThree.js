@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import SecThreeItems from "./SecThreeItems"; // Import your data here
+import SecThreeItems from "./SecThreeItems"; 
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -21,10 +21,10 @@ export default function SecThree() {
   };
 
   const settings = {
-    dots: true, // Display navigation dots
+    dots: true, 
     infinite: true,
     speed: 500,
-    slidesToShow: 4, // Default value for screens smaller than 'lg'
+    slidesToShow: 4, 
     slidesToScroll: 1,
     nextArrow: (
       <div className="arrow next" onClick={handleNext}>
@@ -38,21 +38,21 @@ export default function SecThree() {
     ),
     responsive: [
       {
-        breakpoint: 1024, // 'lg' and up
+        breakpoint: 1024, 
         settings: {
-          slidesToShow: 5, // Number of items for screens 'lg' and up
+          slidesToShow: 5, 
         },
       },
       {
-        breakpoint: 768, // 'md'
+        breakpoint: 768, 
         settings: {
-          slidesToShow: 4, // Number of items for screens 'md' and up
+          slidesToShow: 4, 
         },
       },
       {
-        breakpoint: 640, // 'sm'
+        breakpoint: 640, 
         settings: {
-          slidesToShow: 2, // Number of items for screens 'sm' and up
+          slidesToShow: 2, 
         },
       },
     ],
@@ -77,7 +77,7 @@ export default function SecThree() {
       <div className="relative mt-4  ">
         <Slider {...settings}>
           {SecThreeItems.map((item, index) => (
-            <div key={index} className="w-20  ml-2 "> {/* Adjusted margin here */}
+            <div key={index} className="w-20  ml-2 "> 
               <Link className="" to="">
                 <img
                   src={item.image}
