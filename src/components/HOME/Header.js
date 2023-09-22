@@ -8,7 +8,7 @@ export default function Header(){
   );
   return(
     <>
-      <header className="flex flex-row p-4 fixed">
+      <header className="flex flex-row p-4 ">
         <div>
           <h1 className="font-bold text-2xl text-black">EXCLUSIVE</h1>
         </div>
