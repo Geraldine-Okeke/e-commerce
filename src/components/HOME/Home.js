@@ -11,6 +11,7 @@ import sec6 from './SecSixItems'
 import SecSeven from "./SecSeven"
 import SecEight from "./SecEight"
 import Footer from "./Footer"
+
 export default function Home(){
   return(
     <>

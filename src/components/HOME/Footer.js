@@ -9,7 +9,7 @@ export default function Footer() {
             <h1 className="font-bold text-xl">EXCLUSIVE</h1>
             <span>Subscribe</span>
             <span>Get 10% off your first order</span>
-            <div className="relative flex items-center border border-gray-300 rounded-md p-2">
+            <div className="relative  flex items-center border border-gray-300 rounded-md p-2">
               <input
                 type="email"
                 placeholder="Enter your email"
