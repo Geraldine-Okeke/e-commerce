@@ -45,25 +45,29 @@ export default function SecTwo({ sec2items, heading, title, showDiv }) {
   const [itemInCart, setItemInCart] = useState(() => {
     const initialItemInCart = {};
     sec2items.forEach(item => {
+      item.discountPrice = item.price - (item.price * (item.minus / 100)).toFixed(2);
       initialItemInCart[itemIdsRef.current[item.name]] = cartItems.includes(itemIdsRef.current[item.name]);
     });
     return initialItemInCart;
   });
 
   const handleCartToggle = (itemName, itemId) => {
+    const item = sec2items.find(item => itemIdsRef.current[item.name] === itemId);
+  
     if (itemInCart[itemId]) {
       console.log('Removed', itemId);
       removeFromCart(itemId);
     } else {
-      console.log('added', itemId);
-      addToCart(itemId);
+      console.log('Added', itemId, itemName);
+      addToCart(itemId, itemName, item.price, item.discountPrice);
     }
-    
+  
     setItemInCart(prevItemInCart => ({
       ...prevItemInCart,
       [itemId]: !prevItemInCart[itemId]
     }));
   };
+  
 
   return (
     <>
@@ -119,7 +123,7 @@ export default function SecTwo({ sec2items, heading, title, showDiv }) {
                   <s>${item.price}</s>
                 </span>
                 <span className="text-red-500 font-bold">
-                  ${(item.price - (item.price * (item.minus / 100))).toFixed(2)}
+                ${item.discountPrice}
                 </span>
               </div>
               <div className="text-center flex flex-row gap-1">

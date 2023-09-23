@@ -44,6 +44,9 @@ function OffcanvasNav() {
             </Link>
           </li>
           <li>
+              <Link className="cursor-pointer" to="/CART/Cart">Cart</Link>
+          </li>
+          <li>
             <Link to="/contact" onClick={toggleMenu}>
               Contact
             </Link>

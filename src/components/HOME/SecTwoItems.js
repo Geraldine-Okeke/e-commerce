@@ -12,6 +12,7 @@ const SectTwoItems = [
     rating: 4,
     num: 100,
     minus: 40,
+    discountPrice: null,
   },
   {
     image: chair,
@@ -20,6 +21,7 @@ const SectTwoItems = [
     rating: 5,
     num: 150,
     minus: 35,
+    discountPrice: null,
   },
   {
     image: game,
@@ -28,6 +30,7 @@ const SectTwoItems = [
     rating: 3.5,
     num: 120,
     minus: 30,
+    discountPrice: null,
   },
   {
     image: keyB,
@@ -36,6 +39,7 @@ const SectTwoItems = [
     rating: 1,
     num: 75,
     minus: 25,
+    discountPrice: null,
   },
 ];
 
