@@ -2,7 +2,10 @@
 
 Welcome to **My E-Commerce Website**, a modern and user-friendly online shopping platform. This project was created as a part of Okeke Ebele's portfolio to demonstrate web development skills. Feel free to explore the website and its features!
 
+**View the live project:** [https://e-commerce-work-1.vercel.app/](https://e-commerce-work-1.vercel.app/)
+
 ## Table of Contents
+
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
