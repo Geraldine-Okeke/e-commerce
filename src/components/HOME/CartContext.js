@@ -5,24 +5,28 @@ const CartContext = createContext();
 export const CartProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState([]);
 
-  const addToCart = (itemId, itemName, itemPrice, itemDiscountPrice) => {
+  const addToCart = (itemId, itemName, itemPrice, itemDiscountPrice, itemImage) => {
     setCartItems((prevItems) => {
       const updatedItems = [...prevItems];
       const index = updatedItems.findIndex((item) => item.id === itemId);
-
+  
       if (index !== -1) {
+        
+        updatedItems[index].quantity = (updatedItems[index].quantity || 1) + 1;
       } else {
         updatedItems.push({
           id: itemId,
           name: itemName,
           price: itemPrice,
           discountPrice: itemDiscountPrice,
+          image: itemImage, 
         });
       }
-
+  
       return updatedItems;
     });
   };
+  
   
 
   const removeFromCart = (itemId) => {

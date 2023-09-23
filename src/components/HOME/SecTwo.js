@@ -59,7 +59,7 @@ export default function SecTwo({ sec2items, heading, title, showDiv }) {
       removeFromCart(itemId);
     } else {
       console.log('Added', itemId, itemName);
-      addToCart(itemId, itemName, item.price, item.discountPrice);
+      addToCart(itemId, itemName, item.price, item.discountPrice, item.image); // Pass item.image
     }
   
     setItemInCart(prevItemInCart => ({

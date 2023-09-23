@@ -25,7 +25,14 @@ function Cart() {
           <div>
             {cartItems.map((item) => (
               <div key={item.id} className="border p-3 mb-3">
-                <h3 className="text-lg font-semibold">{item.name}</h3>
+                <div className="flex items-center justify-between">
+                  <h3 className="text-lg font-semibold">{item.name}</h3>
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    className="w-20 h-20 object-cover"
+                  />
+                </div>
                 <p>
                   Quantity:{' '}
                   <div className="flex items-center">
